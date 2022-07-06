@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - RedStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    {{!-- <script defer src="index.js"></script> --}}
+</head>
+<body>
+    {{>header}}
+    <!-- account page -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Register</span>
+                        </div>
+                        <form action="/register" id="RegForm" method = "POST">
+                            <input type="text" placeholder="Username" name="username">
+                            <input type="email" placeholder="E-mail" name="email">
+                            <input type="password" placeholder="Password" name="password">
+                            <input type="password" placeholder="Confirm Password" name="confirmPassword">
+                            <input type="submit" class="btn" value="Create account"/>
+                            <a class="loginAnchor" href="/">Already a user? Sign up</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer  -->
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+</html>

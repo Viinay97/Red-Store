@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    {{>header2}}
+    <div class="container-products">
+        <div class="product-header">
+            <div class="cart-h">Your Cart</div>
+        </div>
+        <div class="products">
+        </div>
+        <div class="cart-buttons">
+            <button class="empty btn" onclick="emptyCart()">Empty Cart</button>
+            <button class="empty btn" onclick="checkout()">Place Order</button>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
