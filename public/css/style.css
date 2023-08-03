@@ -6,9 +6,6 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    min-height: 100vh;
 }
 .container{
     max-width: 1300px;
